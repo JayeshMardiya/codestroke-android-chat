@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/clinical_history"
+            android:textAppearance="@style/ToolBarText"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <EditText
+            android:id="@+id/past_medical_history"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:hint="@string/past_medical_history"
+            android:inputType="textPersonName"
+            android:paddingLeft="18dp"
+            android:textAppearance="@style/EditTextHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+        <CheckBox
+            android:id="@+id/checkBoxIHD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/IHD"
+            app:layout_constraintEnd_toStartOf="@+id/checkBoxDM"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/past_medical_history" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/DM"
+            app:layout_constraintEnd_toStartOf="@+id/checkBoxStroke"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxIHD"
+            app:layout_constraintTop_toBottomOf="@+id/past_medical_history" />
+
+        <CheckBox
+            android:id="@+id/checkBoxStroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/stroke"
+            app:layout_constraintEnd_toStartOf="@+id/checkBoxEpilepsy"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxDM"
+            app:layout_constraintTop_toBottomOf="@+id/past_medical_history" />
+
+        <CheckBox
+            android:id="@+id/checkBoxEpilepsy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/epilepsy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxStroke"
+            app:layout_constraintTop_toBottomOf="@+id/past_medical_history" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/AF"
+            app:layout_constraintStart_toStartOf="@id/checkBoxIHD"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxIHD" />
+
+        <CheckBox
+            android:id="@+id/checkBoxOtherNeurologicalConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/other_neurological_conditions"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxAF"
+            app:layout_constraintStart_toStartOf="@id/checkBoxDM"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxIHD" />
+
+        <EditText
+            android:id="@+id/medications"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:hint="@string/medications"
+            android:inputType="textPersonName"
+            android:paddingLeft="18dp"
+            android:textAppearance="@style/EditTextHint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxAF" />
+
+        <TextView
+            android:id="@+id/anticoagulants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="18dp"
+            android:text="@string/anticoagulants"
+            android:textAppearance="@style/Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medications" />
+
+        <RadioGroup
+            android:id="@+id/anticoags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toEndOf="@+id/anticoagulants"
+            app:layout_constraintTop_toBottomOf="@+id/medications">
+
+            <RadioButton
+                android:id="@+id/yes_anticoags"
+                android:checked="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/no_anticoags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkBoxApixaban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/apixaban"
+            app:layout_constraintEnd_toStartOf="@+id/checkBoxRivaroxaban"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/anticoagulants" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRivaroxaban"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/rivaroxaban"
+            app:layout_constraintEnd_toStartOf="@+id/checkBoxWarfarin"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxApixaban"
+            app:layout_constraintTop_toBottomOf="@+id/anticoagulants" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWarfarin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="@string/warfarin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxRivaroxaban"
+            app:layout_constraintTop_toBottomOf="@+id/anticoagulants" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDabigatran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/dabigatran"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@id/checkBoxApixaban"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxApixaban" />
+
+        <CheckBox
+            android:id="@+id/checkBoxHeparin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/heparin"
+            android:layout_marginTop="16dp"
+          app:layout_constraintStart_toStartOf="@id/checkBoxRivaroxaban"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxDabigatran"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxApixaban"/>
+
+        <TextView
+            android:id="@+id/last_dose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="26dp"
+            android:text="@string/last_dose"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxDabigatran"
+            android:textAppearance="@style/Title"/>
+
+        <EditText
+            android:id="@+id/et_last_dose"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:paddingLeft="18dp"
+            android:inputType="textPersonName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/last_dose"
+            android:background="@drawable/edit_text_border"/>
+
+        <ImageButton
+            android:id="@+id/calenderImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/small_calender"
+            app:layout_constraintEnd_toEndOf="@+id/et_last_dose"
+            app:layout_constraintBottom_toBottomOf="@+id/et_last_dose"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/situation"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:paddingLeft="18dp"
+            android:hint="@string/situation"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_last_dose"
+            android:background="@drawable/edit_text_border"/>
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="18dp"
+            android:ems="10"
+            android:paddingLeft="18dp"
+            android:hint="@string/weight"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/situation"
+            android:background="@drawable/edit_text_border"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="@string/next"
+            android:background="@drawable/rounded_btn_next"
+            android:textAppearance="@style/ButtonTitle"
+            app:layout_constraintTop_toBottomOf="@+id/weight"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <View
+            android:layout_width="132dp"
+            android:layout_height="5dp"
+            android:background="#FF080808"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

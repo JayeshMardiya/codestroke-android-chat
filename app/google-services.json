@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1032718541294",
+    "firebase_url": "https://codestockalert.firebaseio.com",
+    "project_id": "codestockalert",
+    "storage_bucket": "codestockalert.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032718541294:android:4f4c52100a01a3d0",
+        "android_client_info": {
+          "package_name": "com.simi.codestrokealert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032718541294-rlskj69uu817j386m9h05oieql267hj8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT8bVvLxihUH3xJQvJm5_99q22FC9Laa0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

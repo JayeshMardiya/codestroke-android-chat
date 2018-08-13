@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    
+    <style name="ToolBarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+    </style>
+
+    <style name="ToolBarText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+    </style>
+    
+    <style name="LoginText" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+    </style>
+
+    <style name="agree_text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#646464</item>
+        <item name="android:fontFamily">@font/sf_ui_display_regular</item>
+    </style>
+
+
+    <style name="Title" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#546F7A</item>
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+    </style>
+
+    <style name="EditTextHint" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFD4D7DC</item>
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+    </style>
+
+    <style name="ButtonText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/rounded_btn</item>
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+    </style>
+
+    <style name="ButtonTitle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/rounded_btn_next</item>
+        <item name="android:fontFamily">@font/sf_ui_display_bold_58646a511e3d9</item>
+    </style>
+
+    <style name="ButtonProperty" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/rounded_btn_next</item>
+        <item name="android:fontFamily">@font/sf_ui_display_bold_58646a511e3d9</item>
+    </style>
+
+    <style name="CheckBoxText" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:color">#C5D2D8</item>
+    </style>
+
+    <style name="CardViewText" parent="CardView">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/sf_ui_display_medium_58646be638f96</item>
+    </style>
+
+    <style name="EDText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:color">#C5D2D8</item>
+    </style>
+
+    <style name="MassText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:color">#FF546F7A</item>
+    </style>
+
+    <style name="RadioButtonText" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:color">#979797</item>
+    </style>
+
+    <style name="RadiologyText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:color">#546F7A</item>
+    </style>
+
+    <style name="RadiologyRadioButton" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:color">#979797</item>
+    </style>
+
+    <style name="ManagementText" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:color">#546F7A</item>
+    </style>
+
+    <style name="ManagementText2" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/sf_ui_display_semibold_58646eddcae92</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:color">#000000</item>
+    </style>
+
+
+    <style name="hospital_name_text" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#C5D2D8</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:background">@drawable/rounded_btn_next</item>
+        <item name="android:fontFamily">@font/sf_ui_display_bold_58646a511e3d9</item>
+    </style>
+
+
+
+</resources>

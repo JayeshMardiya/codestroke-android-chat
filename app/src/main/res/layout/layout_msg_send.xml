@@ -1,0 +1,29 @@
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:background="@drawable/sender_bubble"
+        android:gravity="center"
+        android:id="@+id/tv_sent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:maxWidth="150dp"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:gravity="end"
+        android:id="@+id/tv_date"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_sent"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>

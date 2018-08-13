@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.simi.codestrokealert">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".notification.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.login.LoginUserActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.paramedics.ClinicalAssessmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.paramedics.PatientDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.paramedics.MassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.paramedics.DestinationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.paramedics.ClinicalHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.paramedics.VitalSingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.paramedics.RaceScoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.paramedics.ProfileSummaryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.clinicians.CliniciansPatientDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.clinicians.HomeScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".chat.ChatActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/mass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92"
+        android:text="@string/mass"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="#979797"
+        app:layout_constraintTop_toBottomOf="@+id/mass" />
+
+    <TextView
+        android:id="@+id/facial_droop"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/facial_droop"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_facial_drop"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/facial_droop"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <RadioButton
+            android:id="@+id/yes_facial_drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_facial_drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/unknown_facial_drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/unknown"
+            android:textAppearance="@style/RadioButtonText" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/arm_drift"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/arm_drift"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/facial_droop" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_arm_drift"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio_grp_facial_drop"
+        app:layout_constraintTop_toBottomOf="@+id/radio_grp_facial_drop">
+
+        <RadioButton
+            android:id="@+id/yes_arm_drift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_arm_drift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/unknown_arm_drift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/unknown"
+            android:textAppearance="@style/RadioButtonText" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/weak_grip"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/weak_grip"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/arm_drift" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_weak_grip"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio_grp_arm_drift"
+        app:layout_constraintTop_toBottomOf="@+id/radio_grp_arm_drift">
+
+        <RadioButton
+            android:id="@+id/yes_weak_grip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_weak_grip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/unknown_weak_grip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/unknown"
+            android:textAppearance="@style/RadioButtonText" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/speech_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/speech_difficulty"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weak_grip" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_speech_difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio_grp_weak_grip"
+        app:layout_constraintTop_toBottomOf="@+id/radio_grp_weak_grip">
+
+        <RadioButton
+            android:id="@+id/yes_speech_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_speech_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/unknown_speech_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/unknown"
+            android:textAppearance="@style/RadioButtonText" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/vital_signs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92"
+        android:text="@string/vital_signs"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_grp_speech_difficulty" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="#979797"
+        app:layout_constraintTop_toBottomOf="@+id/vital_signs" />
+
+    <EditText
+    android:id="@+id/weight"
+    android:layout_width="match_parent"
+    android:layout_height="41dp"
+    android:layout_marginLeft="31dp"
+    android:layout_marginStart="31dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginEnd="25dp"
+    android:layout_marginTop="14dp"
+    android:ems="10"
+    android:hint="@string/weight"
+    android:paddingLeft="18dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/divider2"
+    android:background="@drawable/edit_text_border"/>
+
+    <EditText
+        android:id="@+id/heart_rate"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="@string/heart_rate"
+        android:paddingLeft="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/weight"
+        android:background="@drawable/edit_text_border"/>
+
+    <RadioGroup
+        android:id="@+id/radio_grp_heart_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heart_rate">
+
+        <RadioButton
+            android:id="@+id/regular_heart_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regular" />
+
+        <RadioButton
+            android:id="@+id/irregular_heart_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/irregular" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/respiratory_rate"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/respiratory_rate"
+        android:paddingLeft="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_grp_heart_rate"
+        android:background="@drawable/edit_text_border"/>
+
+    <EditText
+        android:id="@+id/temperature"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/temperature"
+        android:paddingLeft="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respiratory_rate"
+        android:background="@drawable/edit_text_border"/>
+
+    <EditText
+        android:id="@+id/gcs"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/GCS"
+        android:paddingLeft="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temperature"
+        android:background="@drawable/edit_text_border"/>
+
+    <EditText
+        android:id="@+id/blood_glucose"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/blood_glucose"
+        android:paddingLeft="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gcs"
+        android:background="@drawable/edit_text_border"/>
+
+    <TextView
+        android:id="@+id/race_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92"
+        android:text="@string/race_score2"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blood_glucose" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="#979797"
+        app:layout_constraintTop_toBottomOf="@+id/race_score" />
+
+    <TextView
+        android:id="@+id/facial_palsy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/facial_palsy"
+        android:textAppearance="@style/EditTextHint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+    <Spinner
+        android:id="@+id/spinner_facial_palsy"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:entries="@array/facial_palsy_array"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintTop_toBottomOf="@+id/facial_palsy"/>
+
+    <TextView
+        android:id="@+id/arm_motor_impairment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/arm_motor_impairment"
+        android:textAppearance="@style/EditTextHint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_facial_palsy" />
+
+    <Spinner
+        android:id="@+id/spinner_arm_motor_impairment"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:entries="@array/arm_motor_impairment_array"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintTop_toBottomOf="@+id/arm_motor_impairment">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/leg_motor_impairment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/leg_motor_impairment"
+        android:textAppearance="@style/EditTextHint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_arm_motor_impairment" />
+
+    <Spinner
+        android:id="@+id/spinner_leg_motor_impairment"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:entries="@array/leg_motor_impairment_array"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintTop_toBottomOf="@+id/leg_motor_impairment">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/head_and_gaze_deviation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/head_and_gaze_deviation"
+        android:textAppearance="@style/EditTextHint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_leg_motor_impairment" />
+
+    <Spinner
+        android:id="@+id/spinner_head_and_gaze_deviation"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:entries="@array/head_and_gaze_deviation_array"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintTop_toBottomOf="@+id/head_and_gaze_deviation">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/cannula_in_cub_fossa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92"
+        android:text="@string/cannula_in_cub_fossa"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_head_and_gaze_deviation" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="#979797"
+        app:layout_constraintTop_toBottomOf="@+id/cannula_in_cub_fossa" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_cannula_in_cub_fossa"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4">
+
+        <RadioButton
+            android:id="@+id/yes_cannula_in_cub_fossa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes" />
+
+        <RadioButton
+            android:id="@+id/no_cannula_in_cub_fossa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no" />
+
+        <RadioButton
+            android:id="@+id/unknown_cannula_in_cub_fossa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/unknown" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/NIHSS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92"
+        android:text="@string/NIHSS"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_grp_cannula_in_cub_fossa" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="#979797"
+        app:layout_constraintTop_toBottomOf="@+id/NIHSS" />
+
+    <TextView
+        android:id="@+id/level_of_consciousness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/level_of_consciousness"
+        android:textAppearance="@style/EditTextHint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider5" />
+
+    <Spinner
+        android:id="@+id/spinner_level_of_consciousness"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:entries="@array/level_of_consciousness_array"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintTop_toBottomOf="@+id/level_of_consciousness">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/month_and_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/month_and_age"
+        android:textAppearance="@style/EditTextHint"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_level_of_consciousness" />
+
+    <Spinner
+        android:id="@+id/spinner_month_and_age"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:entries="@array/month_and_age_array"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintTop_toBottomOf="@+id/month_and_age">
+    </Spinner>
+
+    <TextView
+        android:id="@+id/cannula_in_cub_fossa2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92"
+        android:text="@string/cannula_in_cub_fossa"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner_month_and_age" />
+
+    <View
+        android:id="@+id/divider6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="#979797"
+        app:layout_constraintTop_toBottomOf="@+id/cannula_in_cub_fossa2" />
+
+    <Spinner
+        android:id="@+id/spinner_cub_in_fussa"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:entries="@array/cub_in_fussa_array"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/edit_text_border"
+        app:layout_constraintTop_toBottomOf="@+id/divider6">
+    </Spinner>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="@string/submit"
+        android:background="@drawable/rounded_btn_next"
+        android:textAppearance="@style/ButtonTitle"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_cub_in_fussa"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

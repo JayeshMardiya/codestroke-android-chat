@@ -1,0 +1,229 @@
+<resources>
+    <string name="app_name">Code Stroke Alert</string>
+    <string name="login">Login</string>
+    <string name="agree_to_term_and_conditions">By login you are agree to\n<u>
+        <font color='#FF152D00'>Terms and Conditions</font></u> of codestroke</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="patient_details">Patient Details</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="first_name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="last_name">Last Name</string>
+    <string name="role">Role</string>
+    <string name="paramedic">Paramedic</string>
+    <string name="clinician">Clinician</string>
+    <string name="DOB">DOB</string>
+    <string name="address">Address</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="last_seen">Last Seen Well</string>
+    <string name="next_of_kin">Next of Kin</string>
+    <string name="nok_telephone">NOK Telephone</string>
+    <string name="nok_contact">NOK Contact</string>
+    <string name="unknown">Unknown</string>
+    <string name="unspecified">Unspecified</string>
+    <string name="next">NEXT</string>
+    <string name="destination">Destination</string>
+    <string name="choose_hospital">Choose Hospital</string>
+    <string name="clinical_history">Clinical History</string>
+    <string name="facial_droop">Facial droop</string>
+    <string name="arm_drift">Arm drift</string>
+    <string name="weak_grip">Weak grip</string>
+    <string name="speech_difficulty">Speech Difficulty</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="clinical_assessment">Clinical Assessment</string>
+    <string name="past_medical_history">Past Medical History</string>
+    <string name="IHD">IHD</string>
+    <string name="DM">DM</string>
+    <string name="stroke">Stroke</string>
+    <string name="epilepsy">Epilepsy</string>
+    <string name="AF">AF</string>
+    <string name="other_neurological_conditions">Other neurological conditions</string>
+    <string name="medications">Medications</string>
+    <string name="anticoagulants">Anticoagulants</string>
+    <string name="apixaban">Apixaban</string>
+    <string name="rivaroxaban">Rivaroxaban</string>
+    <string name="warfarin">Warfarin</string>
+    <string name="dabigatran">Dabigatran</string>
+    <string name="heparin">Heparin</string>
+    <string name="situation">Situation (HOPC)</string>
+    <string name="weight">Weight</string>
+    <string name="facial_palsy">Facial palsy</string>
+    <string name="absent">Absent 0</string>
+    <string name="mild_1">Mild 1</string>
+    <string name="mod_severe_2">Mod-Severe 2</string>
+    <string name="arm_motor_impairment">Arm motor Impairment</string>
+    <string name="normal_mild_0">Normal-Mild 0</string>
+    <string name="mod_1">Mod 1</string>
+    <string name="severe_2">Severe 2</string>
+    <string name="leg_motor_impairment">Leg motor impairment</string>
+    <string name="head_and_gaze_deviation">Head and gaze deviation</string>
+    <string name="present_1">Present 1</string>
+    <string name="blood_pressure">Blood pressure (mmHg)</string>
+    <string name="heart_rate">Heart rate (bpm)</string>
+    <string name="regular">Regular</string>
+    <string name="irregular">Irregular</string>
+    <string name="respiratory_rate">Respiratory Rate (bpm)</string>
+    <string name="oxygen_saturation">Oxygen Saturation %</string>
+    <string name="temperature">Temperature (C)</string>
+    <string name="blood_glucose">Blood Glucose (mmol/L)</string>
+    <string name="GCS">GCS</string>
+    <string name="Eye">Eye</string>
+    <string name="Verbal">Verbal</string>
+    <string name="motor">Motor</string>
+    <string name="no_eye_opening_1">No eye opening 1</string>
+    <string name="eye_open_to_pain_2">Eye open to pain 2</string>
+    <string name="eye_open_to_speech_3">Eye open to Speech 3</string>
+    <string name="eye_open_spontaneously_4">Eye open spontaneously 4</string>
+    <string name="no_verbal_response">No verbal response 1</string>
+    <string name="incomprehensible_sounds">Incomprehensible sounds 2</string>
+    <string name="inappropriate_words">Inappropriate words 3</string>
+    <string name="confused">Confused 4</string>
+    <string name="oriented">Oriented 5</string>
+    <string name="no_motor_response">No motor response 1</string>
+    <string name="extension_to_pain">Extension to pain 2 </string>
+    <string name="obeys_commands">Obeys commands 6</string>
+    <string name="abnormal_ﬂexion_to_pain">Abnormal ﬂexion to pain 3 </string>
+    <string name="flexion_to_pain">Flexion/withdrawal to pain 4</string>
+    <string name="localises_to_pain">Localises to pain 5</string>
+    <string name="IV_cannula_in_cub_fossa">18G IV cannula in cub fossa</string>
+    <string name="cannula_in_cub_fossa">18G IV Cannula in cub fossa</string>
+    <string name="profile_summary">Profile Summary</string>
+    <string name="drop_off">DROP OFF</string>
+    <string name="code_stroke">CODE STROKE</string>
+    <string name="drop_off_dialog"> "Are you sure you wish to drop off the patient?\n You will no longer be able to edit details" with a Yes/No selector. </string>
+    <string name="radiology">Radiology</string>
+    <string name="management">Management</string>
+    <string name="current_location">Current Location :</string>
+    <string name="registered_in_ed">Registered in ED</string>
+    <string name="triaged_in_ed">Triaged in ED</string>
+    <string name="primary_survey_completed">Primary Survey Completed</string>
+    <string name="submit">SUBMIT</string>
+    <string name="medicare">Medicare</string>
+    <string name="last_dose">Last Dose</string>
+    <string name="last_meal">Last Meal</string>
+    <string name="mass">MASS</string>
+    <string name="vital_signs">VITAL SIGNS</string>
+    <string name="race_score2">RACE Score (2)</string>
+    <string name="NIHSS">NIHSS (11)</string>
+    <string name="level_of_consciousness">Level of consciousness</string>
+    <string name="month_and_age">Month and age</string>
+    <string name="movement_to_pain">Movement to pain 3</string>
+    <string name="both_correct">Both correct</string>
+    <string name="ct_scanner_ready">CT Scanner Ready</string>
+    <string name="ct_1">CT 1</string>
+    <string name="ct_2">CT 2</string>
+    <string name="ct_3">CT 3</string>
+    <string name="pt_arrived_in_ct">Pt arrived in CT</string>
+    <string name="ct_complete">CT complete</string>
+    <string name="ich_on_non_con_ct">ICH on noncon CT</string>
+    <string name="proceed_with_cta">Proceed with CTA/CTP</string>
+    <string name="cta_complete">CTA/CTP complete</string>
+    <string name="large_vessel_occlusion">Large vessel occlusion</string>
+    <string name="thrombolysis">Thrombolysis</string>
+    <string name="age">Age >18</string>
+    <string name="time_of_onset">Time of onset &lt; 4.5 hours</string>
+    <string name="ich_on_noncontrast">ICH on noncontrastCT</string>
+    <string name="absolute_contraindications">Absolute contraindications</string>
+    <string name="neu_head_trauma_or_stroke">Neu head trauma or stroke</string>
+    <string name="uncontrolled_htn">Uncontrolled HTN (SBP >18)</string>
+    <string name="hisotry_of_ich">Hisotry of ICH</string>
+    <string name="known_intracranial">Known intracranial</string>
+    <string name="active_bleeding">Active bleeding</string>
+    <string name="endocarditis">Endocarditis (incl suspected)</string>
+    <string name="known_bleeding_diathesis">Known bleeding diathesis</string>
+    <string name="abnormal_blood_glucose">Abnormal blood glucose</string>
+    <string name="relative_contraindications">Relative contraindications</string>
+    <string name="rapidly_improving">Rapidly improving</string>
+    <string name="major_trauma">Major trauma or surgery in \nlast 3 weeks</string>
+    <string name="active_bleeding_in_last">Active bleeding in last 3 weeks</string>
+    <string name="seizure_at_onset">Seizure at onset</string>
+    <string name="recent_arterial_puncture">Recent arterial puncture</string>
+    <string name="recent_lumbar_puncture">Recent lumbar puncture</string>
+    <string name="post_acs_pericarditis">Post ACS pericarditis</string>
+    <string name="pregnant">Pregnant</string>
+    <string name="time_when_thrombolysis_given">Time when thrombolysis given</string>
+    <string name="ecr">ECR</string>
+    <string name="surgical_management">Surgical Management</string>
+    <string name="conservative_management">Conservative Management</string>
+    <string name="case_completed">Case Completed</string>
+    <string name="role_paramedic">paramedic</string>
+    <string name="ed_clinician">ed_clinician</string>
+    <string name="radiographer">radiographer</string>
+    <string name="stroke_team">stroke_team</string>
+    <string name="radiologist">radiologist</string>
+    <string name="stroke_ward">stroke_ward</string>
+    <string name="neuroint">neuroint</string>
+    <string name="angio_nurse">angio_nurse</string>
+    <string name="anaesthetist">anaesthetist</string>
+    <string name="admin">admin</string>
+    <string-array name="facial_palsy_array">
+        <item>@string/absent</item>
+        <item>@string/mild_1</item>
+        <item>@string/mod_severe_2</item>
+    </string-array>
+    <string-array name="arm_motor_impairment_array">
+        <item>@string/normal_mild_0</item>
+        <item>@string/mod_1</item>
+        <item>@string/severe_2</item>
+    </string-array>
+    <string-array name="leg_motor_impairment_array">
+        <item>@string/normal_mild_0</item>
+        <item>@string/mod_1</item>
+        <item>@string/severe_2</item>
+    </string-array>
+    <string-array name="head_and_gaze_deviation_array">
+        <item>@string/absent</item>
+        <item>@string/present_1</item>
+    </string-array>
+    <string-array name="level_of_consciousness_array">
+        <item>@string/movement_to_pain</item>
+    </string-array>
+    <string-array name="month_and_age_array">
+        <item>@string/both_correct</item>
+    </string-array>
+    <string-array name="cub_in_fussa_array">
+        <item>@string/level_of_consciousness</item>
+    </string-array>
+    <string-array name="gcs_eye_array">
+        <item>@string/no_eye_opening_1</item>
+        <item>@string/eye_open_to_pain_2</item>
+        <item>@string/eye_open_to_speech_3</item>
+        <item>@string/eye_open_spontaneously_4</item>
+    </string-array>
+    <string-array name="gcs_verbal_array">
+        <item>@string/no_verbal_response</item>
+        <item>@string/incomprehensible_sounds</item>
+        <item>@string/inappropriate_words</item>
+        <item>@string/confused</item>
+        <item>@string/oriented</item>
+    </string-array>
+    <string-array name="gcs_motor_array">
+        <item>@string/no_motor_response</item>
+        <item>@string/extension_to_pain</item>
+        <item>@string/abnormal_ﬂexion_to_pain</item>
+        <item>@string/flexion_to_pain</item>
+        <item>@string/localises_to_pain</item>
+        <item>@string/obeys_commands</item>
+    </string-array>
+    <string-array name="group_array">
+        <item>@string/paramedic</item>
+        <item>@string/clinician</item>
+    </string-array>
+    <string-array name="role_array">
+        <item>@string/role_paramedic</item>
+        <item>@string/ed_clinician</item>
+        <item>@string/radiographer</item>
+        <item>@string/stroke_team</item>
+        <item>@string/radiologist</item>
+        <item>@string/stroke_ward</item>
+        <item>@string/neuroint</item>
+        <item>@string/angio_nurse</item>
+        <item>@string/anaesthetist</item>
+        <item>@string/admin</item>
+    </string-array>
+
+</resources>

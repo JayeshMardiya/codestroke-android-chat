@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageButton
+            android:id="@+id/arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:contentDescription="@null"
+            android:background="?attr/actionBarItemBackground"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintLeft_toLeftOf="@+id/toolbar"
+            app:srcCompat="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/clinical_assessment"
+            android:textAppearance="@style/ToolBarText"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <EditText
+            android:id="@+id/blood_pressure"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="18dp"
+            android:paddingStart="18dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/blood_pressure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAppearance="@style/EditTextHint"
+            android:background="@drawable/edit_text_border"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"/>
+
+        <EditText
+            android:id="@+id/heart_rate"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="18dp"
+            android:paddingStart="18dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/heart_rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAppearance="@style/EditTextHint"
+            android:background="@drawable/edit_text_border"
+            app:layout_constraintTop_toBottomOf="@+id/blood_pressure"/>
+
+        <RadioGroup
+            android:id="@+id/radio_grp_heart_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heart_rate">
+
+            <RadioButton
+                android:id="@+id/btn_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/regular" />
+
+            <RadioButton
+                android:id="@+id/btn_irregular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="@string/irregular" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/respiratory_rate"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="18dp"
+            android:paddingStart="18dp"
+            android:ems="10"
+            android:hint="@string/respiratory_rate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAppearance="@style/EditTextHint"
+            android:background="@drawable/edit_text_border"
+            app:layout_constraintTop_toBottomOf="@+id/radio_grp_heart_rate"/>
+
+        <EditText
+            android:id="@+id/oxygen_saturation"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="18dp"
+            android:paddingStart="18dp"
+            android:ems="10"
+            android:hint="@string/oxygen_saturation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAppearance="@style/EditTextHint"
+            android:background="@drawable/edit_text_border"
+            app:layout_constraintTop_toBottomOf="@+id/respiratory_rate"/>
+
+        <EditText
+            android:id="@+id/temperature"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="18dp"
+            android:paddingStart="18dp"
+            android:ems="10"
+            android:hint="@string/temperature"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAppearance="@style/EditTextHint"
+            android:background="@drawable/edit_text_border"
+            app:layout_constraintTop_toBottomOf="@+id/oxygen_saturation"/>
+
+        <EditText
+            android:id="@+id/blood_glucose"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:paddingLeft="18dp"
+            android:paddingStart="18dp"
+            android:ems="10"
+            android:hint="@string/blood_glucose"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textAppearance="@style/EditTextHint"
+            android:background="@drawable/edit_text_border"
+            app:layout_constraintTop_toBottomOf="@+id/temperature"/>
+
+        <TextView
+            android:id="@+id/GCS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/GCS"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/blood_glucose"
+            android:textAppearance="@style/Title"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="fixed"
+            app:tabGravity="fill"
+            app:layout_constraintTop_toBottomOf="@+id/GCS"/>
+
+
+        <android.support.v4.view.ViewPager
+            app:layout_constraintTop_toBottomOf="@+id/tabs"
+            android:id="@+id/viewpager"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="@string/next"
+            android:background="@drawable/rounded_btn_next"
+            android:textAppearance="@style/ButtonTitle"
+            app:layout_constraintTop_toBottomOf="@+id/viewpager"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <View
+            android:layout_width="132dp"
+            android:layout_height="5dp"
+            android:background="#FF080808"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

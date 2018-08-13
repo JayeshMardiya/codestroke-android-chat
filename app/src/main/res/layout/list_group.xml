@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ListHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92"
+        android:textSize="20sp"
+        android:textColor="#FFC5D2D8"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="ListHeader"/>
+
+</android.support.constraint.ConstraintLayout>

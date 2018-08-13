@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/thrombolysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92"
+        android:text="@string/thrombolysis"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="#979797"
+        app:layout_constraintTop_toBottomOf="@+id/thrombolysis" />
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/age"
+        android:textAppearance="@style/ManagementText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/g_18_old"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/yes"
+        android:textAppearance="@style/ManagementText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/large_vessel_occlusion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/large_vessel_occlusion"
+        android:textAppearance="@style/ManagementText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <TextView
+        android:id="@+id/txt_large_vessel_occlusion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/yes"
+        android:textAppearance="@style/ManagementText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age" />
+
+    <TextView
+        android:id="@+id/time_of_onset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/time_of_onset"
+        android:textAppearance="@style/ManagementText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/large_vessel_occlusion" />
+
+    <TextView
+        android:id="@+id/last_well"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/yes"
+        android:textAppearance="@style/ManagementText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/large_vessel_occlusion" />
+
+    <TextView
+        android:id="@+id/ich_on_noncontrast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/ich_on_noncontrast"
+        android:textAppearance="@style/ManagementText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_of_onset" />
+
+    <TextView
+        android:id="@+id/txt_ich_on_noncontrast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/yes"
+        android:textAppearance="@style/ManagementText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_of_onset" />
+
+    <TextView
+        android:id="@+id/absolute_contraindications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92"
+        android:text="@string/absolute_contraindications"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ich_on_noncontrast" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="#979797"
+        app:layout_constraintTop_toBottomOf="@+id/absolute_contraindications" />
+
+    <TextView
+        android:id="@+id/neu_head_trauma_or_stroke"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/neu_head_trauma_or_stroke"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_neu_head_trauma"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2">
+
+        <RadioButton
+            android:id="@+id/yes_neu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_neu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/uncontrolled_htn"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/uncontrolled_htn"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neu_head_trauma_or_stroke" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_uncontrolled_htn"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/neu_head_trauma_or_stroke">
+
+        <RadioButton
+            android:id="@+id/yes_uncontrolled_htn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_uncontrolled_htn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/history_of_ich"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/hisotry_of_ich"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uncontrolled_htn" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_history_of_ich"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uncontrolled_htn">
+
+        <RadioButton
+            android:id="@+id/yes_history_of_ich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_history_of_ich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/known_intracranial"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/known_intracranial"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history_of_ich" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_known_intracranial"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history_of_ich">
+
+        <RadioButton
+            android:id="@+id/yes_known_intracranial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_known_intracranial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/active_bleeding"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/active_bleeding"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/known_intracranial" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_active_bleeding"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/known_intracranial">
+
+        <RadioButton
+            android:id="@+id/yes_active_bleeding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_active_bleeding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/endocarditis"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/endocarditis"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/active_bleeding" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_endocarditis"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/active_bleeding">
+
+        <RadioButton
+            android:id="@+id/yes_endocarditis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_endocarditis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/known_bleeding_diathesis"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/known_bleeding_diathesis"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endocarditis" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_known_bleeding_diathesis"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/endocarditis">
+
+        <RadioButton
+            android:id="@+id/yes_known_bleeding_diathesis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_known_bleeding_diathesis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/abnormal_blood_glucose"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/abnormal_blood_glucose"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/known_bleeding_diathesis" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_abnormal_blood_glucose"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/known_bleeding_diathesis">
+
+        <RadioButton
+            android:id="@+id/yes_abnormal_blood_glucose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_abnormal_blood_glucose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/relative_contraindications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92"
+        android:text="@string/relative_contraindications"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/abnormal_blood_glucose" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="#979797"
+        app:layout_constraintTop_toBottomOf="@+id/relative_contraindications" />
+
+    <TextView
+        android:id="@+id/rapidly_improving"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/rapidly_improving"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_rapidly_improving"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3">
+
+        <RadioButton
+            android:id="@+id/yes_rapidly_improving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_rapidly_improving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/major_trauma"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/major_trauma"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rapidly_improving" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_major_trauma"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rapidly_improving">
+
+        <RadioButton
+            android:id="@+id/yes_major_trauma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_major_trauma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/active_bleeding_in_last"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/active_bleeding_in_last"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/major_trauma" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_active_bleeding_in_last"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/major_trauma">
+
+        <RadioButton
+            android:id="@+id/yes_active_bleeding_in_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_active_bleeding_in_last"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/seizure_at_onset"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/seizure_at_onset"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/active_bleeding_in_last" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_seizure_at_onset"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/active_bleeding_in_last">
+
+        <RadioButton
+            android:id="@+id/yes_seizure_at_onset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_seizure_at_onset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/recent_arterial_puncture"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/recent_arterial_puncture"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seizure_at_onset" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_recent_arterial_puncture"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seizure_at_onset">
+
+        <RadioButton
+            android:id="@+id/yes_recent_arterial_puncture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_recent_arterial_puncture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/recent_lumbar_puncture"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/recent_lumbar_puncture"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recent_arterial_puncture" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_recent_lumbar_puncture"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recent_arterial_puncture">
+
+        <RadioButton
+            android:id="@+id/yes_recent_lumbar_puncture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_recent_lumbar_puncture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/post_acs_pericarditis"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/post_acs_pericarditis"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recent_lumbar_puncture" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_post_acs_pericarditis"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recent_lumbar_puncture">
+
+        <RadioButton
+            android:id="@+id/yes_post_acs_pericarditis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_post_acs_pericarditis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/abnormal_blood_glucose_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/abnormal_blood_glucose"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_acs_pericarditis" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_abnormal_blood_glucose_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_acs_pericarditis">
+
+        <RadioButton
+            android:id="@+id/yes_abnormal_blood_glucose_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_abnormal_blood_glucose_relative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/pregnant"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/pregnant"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abnormal_blood_glucose_relative" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_pregnant"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abnormal_blood_glucose_relative">
+
+        <RadioButton
+            android:id="@+id/yes_pregnant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_pregnant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/time_when_thrombolysis_given"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/time_when_thrombolysis_given"
+        android:textAppearance="@style/MassText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregnant" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_time_when_thrombolysis_given"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregnant">
+
+        <RadioButton
+            android:id="@+id/yes_time_when_thrombolysis_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_time_when_thrombolysis_given"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ecr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/ecr"
+        android:textAppearance="@style/ManagementText2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_when_thrombolysis_given" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_ecr"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_when_thrombolysis_given">
+
+        <RadioButton
+            android:id="@+id/yes_ecr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_ecr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/surgical_management"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/surgical_management"
+        android:textAppearance="@style/ManagementText2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ecr" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_surgical_management"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ecr">
+
+        <RadioButton
+            android:id="@+id/yes_surgical_management"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_surgical_management"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/conservative_management"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/conservative_management"
+        android:textAppearance="@style/ManagementText2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surgical_management" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_conservative_management"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surgical_management">
+
+        <RadioButton
+            android:id="@+id/yes_conservative_management"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadioButtonText" />
+
+        <RadioButton
+            android:id="@+id/no_conservative_management"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadioButtonText" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/case_completed_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/rounded_btn_complete"
+        android:text="@string/case_completed"
+        android:textAppearance="@style/ButtonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conservative_management" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/rounded_btn_next"
+        android:text="@string/submit"
+        android:textAppearance="@style/ButtonTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/case_completed_btn" />
+
+
+</android.support.constraint.ConstraintLayout>

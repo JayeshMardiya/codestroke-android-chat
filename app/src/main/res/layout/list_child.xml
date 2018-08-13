@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3">
+
+
+
+    <TextView
+        android:id="@+id/ListChild"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:gravity="left"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="Child"
+        android:textSize="16sp"
+        android:textColor="#B1BBC0"
+        android:fontFamily="@font/sf_ui_display_medium_58646be638f96"/>
+
+    <TextView
+        android:id="@+id/Value"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="text 2 "
+        android:gravity="left"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginEnd="18dp"
+        android:textColor="#546F7A"
+        android:textSize="16sp"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92" />
+
+</LinearLayout>

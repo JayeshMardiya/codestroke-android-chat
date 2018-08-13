@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ct_scanner_ready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/sf_ui_display_semibold_58646eddcae92"
+        android:text="@string/ct_scanner_ready"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="#979797"
+        app:layout_constraintTop_toBottomOf="@+id/ct_scanner_ready" />
+
+    <TextView
+        android:id="@+id/ct_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/ct_1"
+        android:textAppearance="@style/RadiologyText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_c1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/ct_1"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <RadioButton
+            android:id="@+id/yes_ct1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+        <RadioButton
+            android:id="@+id/no_ct1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:baselineAligned="false"
+            android:text="@string/no"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ct_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/ct_2"
+        android:textAppearance="@style/RadiologyText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ct_1" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_ct_2"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/ct_2"
+        app:layout_constraintTop_toBottomOf="@+id/ct_1">
+
+        <RadioButton
+            android:id="@+id/yes_ct2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+        <RadioButton
+            android:id="@+id/no_ct2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ct_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/ct_3"
+        android:textAppearance="@style/RadiologyText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ct_2" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_ct_3"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/ct_3"
+        app:layout_constraintTop_toBottomOf="@+id/ct_2">
+
+        <RadioButton
+            android:id="@+id/yes_ct3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+        <RadioButton
+            android:id="@+id/no_ct3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/pt_arrived_in_ct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="33dp"
+        android:text="@string/pt_arrived_in_ct"
+        android:textAppearance="@style/RadiologyText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ct_3" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_pt_arrived_in_ct"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="33dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/pt_arrived_in_ct"
+        app:layout_constraintTop_toBottomOf="@+id/ct_3">
+
+        <RadioButton
+            android:id="@+id/yes_pt_arrived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+        <RadioButton
+            android:id="@+id/no_pt_arrived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ct_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/ct_complete"
+        android:textAppearance="@style/RadiologyText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pt_arrived_in_ct" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_ct_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/radio_grp_pt_arrived_in_ct"
+        app:layout_constraintTop_toBottomOf="@+id/pt_arrived_in_ct">
+
+        <RadioButton
+            android:id="@+id/yes_ct_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+        <RadioButton
+            android:id="@+id/no_ct_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ich_on_non_con_ct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/ich_on_non_con_ct"
+        android:textAppearance="@style/RadiologyText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ct_complete" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_ich_on_non_con_ct"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/radio_grp_ct_complete"
+        app:layout_constraintTop_toBottomOf="@+id/ct_complete">
+
+        <RadioButton
+            android:id="@+id/yes_ich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+        <RadioButton
+            android:id="@+id/no_ich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/proceed_with_cta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/proceed_with_cta"
+        android:textAppearance="@style/RadiologyText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ich_on_non_con_ct" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_proceed_with_cta"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/radio_grp_ct_complete"
+        app:layout_constraintTop_toBottomOf="@+id/ich_on_non_con_ct">
+
+        <RadioButton
+            android:id="@+id/yes_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+        <RadioButton
+            android:id="@+id/no_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/cta_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/cta_complete"
+        android:textAppearance="@style/RadiologyText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proceed_with_cta" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_cta_complete"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/radio_grp_ct_complete"
+        app:layout_constraintTop_toBottomOf="@+id/proceed_with_cta">
+
+        <RadioButton
+            android:id="@+id/yes_cta_com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+        <RadioButton
+            android:id="@+id/no_cta_com"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/large_vessel_occlusion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/large_vessel_occlusion"
+        android:textAppearance="@style/RadiologyText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cta_complete" />
+
+    <RadioGroup
+        android:id="@+id/radio_grp_large_vessel_occlusion"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@id/radio_grp_ct_complete"
+        app:layout_constraintTop_toBottomOf="@+id/cta_complete">
+
+        <RadioButton
+            android:id="@+id/yes_large_vessel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+        <RadioButton
+            android:id="@+id/no_large_vessel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="@string/no"
+            android:textAppearance="@style/RadiologyRadioButton" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_btn_next"
+        android:text="@string/submit"
+        android:textAppearance="@style/ButtonTitle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/large_vessel_occlusion" />
+
+
+
+</android.support.constraint.ConstraintLayout>
